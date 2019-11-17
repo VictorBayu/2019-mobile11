@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import id.ac.polinema.settingsexample.fragments.AdvancedFragment;
 import id.ac.polinema.settingsexample.fragments.DialogsFragment;
 import id.ac.polinema.settingsexample.fragments.HomeFragment;
-import id.ac.polinema.settingsexample.fragments.SettingsFragment;
+import id.ac.polinema.settingsexample.fragments.SettingFragment;
 import id.ac.polinema.settingsexample.fragments.WidgetsFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity
                 return true;
             case R.id.menu_advanced:
                 openFragment(new AdvancedFragment());
+                return true;
+            case R.id.action_settings:
+                openFragment(new SettingFragment());
                 return true;
         }
         return false;
